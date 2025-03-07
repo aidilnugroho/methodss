@@ -1,0 +1,17 @@
+needs ubuntu 22.04, latest nodejs and npm version
+
+sudo apt update
+sudo apt install -y libatk1.0-0 libatk-bridge2.0-0 libcups2 libxcomposite1 libxrandr2 libxdamage1 libxkbcommon0 libpango-1.0-0 libasound2 libgbm-dev libnss3 lsb-release wget
+sudo apt install -y \
+libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxrandr2 \
+libgbm1 libasound2 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 \
+libdrm2 libxfixes3 libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libxfixes3
+
+npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua resemblejs canvas axios undici http-proxy-agent puppeteer-extra-plugin-adblocker
+
+node HTTP-IOS.js -h
+
+recommended:
+node HTTP-IOS target duration 8 --headers undetect
+
+if you use proxies, make sure to check them before using.
